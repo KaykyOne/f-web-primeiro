@@ -1,0 +1,30 @@
+.home-text-great{
+    font-size: 100px;
+    font-weight: bold;
+    margin: 100px 0 0 0;
+    line-height: 0.9; /* Ajuste o valor conforme necessário */
+    margin-bottom: 20px;
+}
+
+.home-text{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 0 50px 5px;
+    color: gray;
+}
+
+.text-great-white{
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 100px 0 0 0;
+    line-height: 0.9; /* Ajuste o valor conforme necessário */
+    margin-bottom: 20px;
+}
+
+.text-suport-light{
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 0 50px 5px;
+}

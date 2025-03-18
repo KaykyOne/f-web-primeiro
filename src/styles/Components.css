@@ -1,3 +1,71 @@
-.logo{
-    height: 100px;
+.logo {
+    height: 50px;
+    border-radius: 100px;
+}
+
+.link-header {
+    color: black;
+}
+
+.img-home {
+    margin-top: 100px;
+    width: 90%;
+}
+
+/* From Uiverse.io by Botwe-Felix5820 */
+/* From Uiverse.io by yaasiinaxmed */
+.button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.button:hover {
+    background-color: var(--color-secundary);
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Deixa os elementos empilhados verticalmente */
+    padding: 20px;
+    max-height: 400px;
+}
+
+.card-content-start {
+    text-align: start;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço disponível */
+    max-height: 100px;
+}
+
+.card button {
+    margin-top: auto; /* Empurra o botão para o final */
+    align-self: center; /* Centraliza o botão */
+}
+
+.card:hover{
+    margin: 20px 0 0 0;
+}
+
+input[type="checkbox"]:disabled {
+    accent-color: var(--color-secundary); /* Cor azul personalizada */
+    opacity: 1; /* Remove o efeito de desabilitado */
+    pointer-events: none; /* Impede o clique */
+}
+
+input[type="checkbox"] {
+    accent-color: var(--color-secundary);
 }
