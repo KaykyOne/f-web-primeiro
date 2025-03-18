@@ -2,7 +2,7 @@ import React from 'react';
 
 import CheckBox from '../components/CheckBox';
 
-import imagem from '../imagens/imagem_back.png';
+import imagem from '../imgs/imagem_back.png';
 
 export default function HomePage() {
   return (

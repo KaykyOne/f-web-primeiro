@@ -1,24 +1,44 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import NavBar from './components/NavBar';
+import Footers from './components/Footers';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/login" element={<Login />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-            <Route path="/about" element={<About />}></Route>
-          </Routes>
-        <Footer />
+        {/* Exibindo o NavBar e Footers apenas quando a rota não for "/login" */}
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          
+          <Route path="/" element={
+            <>
+              <NavBar />  {/* O NavBar será renderizado em todas as rotas, exceto "/login" */}
+              <Home />
+              <Footers /> {/* O Footer será renderizado em todas as rotas, exceto "/login" */}
+            </>
+          } />
+          
+          <Route path="/contact" element={
+            <>
+              <NavBar />
+              <Contact />
+              <Footers />
+            </>
+          } />
+          
+          <Route path="/about" element={
+            <>
+              <NavBar />
+              <About />
+              <Footers />
+            </>
+          } />
+        </Routes>
       </div>
     </BrowserRouter>
   );
