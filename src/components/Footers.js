@@ -8,5 +8,5 @@ export default function Footers() {
             <p>Inovação e tecnologia para o seu futuro</p>
             <p>&copy; 2025 NovusTech. Todos os direitos reservados.</p>
         </div>
-    );
+    );  
 }

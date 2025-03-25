@@ -1,0 +1,10 @@
+
+input[type="checkbox"]:disabled {
+    accent-color: var(--color-secundary); /* Cor azul personalizada */
+    opacity: 1; /* Remove o efeito de desabilitado */
+    pointer-events: none; /* Impede o clique */
+}
+
+input[type="checkbox"] {
+    accent-color: var(--color-secundary);
+}

@@ -1,0 +1,81 @@
+.imgHome {
+    margin-top: 100px;
+    width: 90%;
+}
+
+.homeTextGreat {
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 100px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+.homeText {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 0 50px 5px;
+    color: gray;
+}
+
+.textGreatWhite {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 100px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+.textSupportLight {
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 0 50px 5px;
+}
+
+.container {
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+
+.containerStart {
+    text-align: start;
+    padding-left: 50px;
+}
+
+.containerVertical {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.containerInline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: start;
+}
+
+.containerSecondary {
+    background-color: var(--color-secundary);
+    width: 100%;
+    padding: 40px 0;
+}
+
+.gridContainer3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+}

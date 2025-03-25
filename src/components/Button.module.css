@@ -1,0 +1,16 @@
+.button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.4s;
+}   
+
+.button:hover {
+    background-color: var(--color-secundary);
+}

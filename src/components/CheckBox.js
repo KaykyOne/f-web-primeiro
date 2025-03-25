@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './CheckBox.module.css';
 
 export default function CheckBox({children}) {
     return (

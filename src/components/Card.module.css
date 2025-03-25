@@ -1,0 +1,27 @@
+.card {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Deixa os elementos empilhados verticalmente */
+    padding: 20px;
+    max-height: 400px;
+}
+
+.cardContentStart {
+    text-align: start;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço disponível */
+    max-height: 100px;
+}
+
+.card button {
+    margin-top: auto; /* Empurra o botão para o final */
+    align-self: center; /* Centraliza o botão */
+}
+
+.card:hover{
+    margin: 20px 0 0 0;
+}

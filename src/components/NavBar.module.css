@@ -29,6 +29,7 @@
     opacity: 70%;
 }
 
+
 .headerButtons {
     display: flex;
     align-items: center; /* Alinha os botões verticalmente */
@@ -65,4 +66,8 @@
 .logo{
     height: 100%;
     border-radius: 10px;
+}
+
+.link-header {
+    color: black;
 }

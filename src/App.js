@@ -11,15 +11,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* Exibindo o NavBar e Footers apenas quando a rota não for "/login" */}
         <Routes>
           <Route path="/login" element={<Login />} />
           
           <Route path="/" element={
             <>
-              <NavBar />  {/* O NavBar será renderizado em todas as rotas, exceto "/login" */}
+              <NavBar />
               <Home />
-              <Footers /> {/* O Footer será renderizado em todas as rotas, exceto "/login" */}
+              <Footers />
             </>
           } />
           
