@@ -1,12 +1,13 @@
 .imgHome {
-    margin-top: 100px;
-    width: 90%;
+    margin-top: 2000px;
+    width: 60%;
+    margin: 100px;
 }
 
 .homeTextGreat {
     font-size: 100px;
     font-weight: bold;
-    margin-top: 100px;
+    margin-top: 150px;
     line-height: 0.9;
     margin-bottom: 20px;
 }

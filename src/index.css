@@ -18,3 +18,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+  
+.errorText{
+  background-color: lightcoral;
+  border-radius: 10px;
+  padding: 10px;
+  color: darkred;
+  font-weight: bold;
+  margin: 0;
+}

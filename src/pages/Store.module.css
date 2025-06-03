@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    padding-top: 5%;
+    justify-content: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.form {
+    display: grid;
+    max-width: 300px;
+    margin: 30px;
+    gap: 3px;
+    height: 100px;
+    width: 400px;
+}
+
+.containerForm {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.input {
+    max-height: 40px;
+    min-height: 40px;
+    flex: 1;
+    border: none;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+    padding: 5px;
+    text-align: start;
+}

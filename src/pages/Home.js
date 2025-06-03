@@ -1,6 +1,6 @@
 import React from 'react';
 import CheckBox from '../components/CheckBox';
-import imagem from '../imgs/imagem_back.png';
+import imagem from '../imgs/image_back.svg';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import styles from './Home.module.css';
