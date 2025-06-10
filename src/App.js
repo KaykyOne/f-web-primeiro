@@ -1,56 +1,36 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Register from './pages/Register'
+import Register from './pages/Register';
 import Contact from './pages/Contact';
 import About from './pages/About';
-import './App.css';
-import NavBar from './components/NavBar';
-import Footers from './components/Footers';
 import Store from "./pages/Store";
+import Painel from './pages/Painel';
+import Product from './pages/Product';
+import Brand from './pages/Brand';
+
+import PublicLayout from './components/PublicLayout';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <Routes>
+      <Routes>
+        {/* Layout público */}
+        <Route element={<PublicLayout />}>
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/store" element={<Store />} />
+        </Route>
 
-          <Route path="/" element={
-            <>
-              <NavBar />
-              <Home />
-              <Footers />
-            </>
-          } />
-
-          <Route path="/contact" element={
-            <>
-              <NavBar />
-              <Contact />
-              <Footers />
-            </>
-          } />
-
-          <Route path="/about" element={
-            <>
-              <NavBar />
-              <About />
-              <Footers />
-            </>
-          } />
-
-          <Route path="/store" element={
-            <>
-              <NavBar />
-              <Store />
-              <Footers />
-            </>
-          } />
-
-        </Routes>
-      </div>
+        {/* Layout do painel */}
+        <Route path="/painel" element={<Painel />}>
+          <Route path="products" element={<Product />} />
+          <Route path="brand" element={<Brand />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }

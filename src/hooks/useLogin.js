@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { toast } from 'react-toastify';
 import { ValidarEmail } from '../generic-functions/validacoes';
 import { useAuthentication } from './useAuthentication';
+import { useNavigate } from 'react-router-dom';
 
 export default function useLogin() {
+    const navigate = useNavigate();
     const { login } = useAuthentication();
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
@@ -16,6 +18,7 @@ export default function useLogin() {
             const user = await login(email, senha)
             if (user) {
                 toast.success("Login com sucesso!");
+                navigate('/painel')
             }
             else{
                 toast.error("Erro no Login");

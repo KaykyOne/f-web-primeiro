@@ -1,6 +1,7 @@
 .containerDouble{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
 }
 
 .containerLef{
