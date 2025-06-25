@@ -75,6 +75,8 @@ export const useAuthentication = () => {
         } catch (error) {
             setError(error); // Use o erro correto aqui
             console.log(error);
+        }finally{
+            setLoading(false);
         }
     }
 

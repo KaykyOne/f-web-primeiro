@@ -1,27 +1,29 @@
 .card {
-    background: rgb(255, 255, 255);
-    border-radius: 20px;
-    box-sizing: border-box;
-    height: 100%;
-    transition: 0.4s;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column; /* Deixa os elementos empilhados verticalmente */
-    padding: 20px;
-    max-height: 400px;
+  background: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
 }
 
 .cardContentStart {
-    text-align: start;
-    flex-grow: 1; /* Faz o conteúdo ocupar o espaço disponível */
-    max-height: 100px;
+  text-align: start;
+  flex-grow: 1;
 }
 
 .card button {
-    margin-top: auto; /* Empurra o botão para o final */
-    align-self: center; /* Centraliza o botão */
+  margin-top: auto;
+  align-self: center;
 }
 
-.card:hover{
-    margin: 20px 0 0 0;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
 }

@@ -24,10 +24,25 @@ export default function HomePage() {
 
             <Card>
               <>
-                <h3>Automação</h3>
-                <h1>Integração</h1>
+                <h3>Práticidade</h3>
+                <h1>Agendamento Online</h1>
                 <div className={styles.containerVertical}>
-                  <p className={styles.homeText}>Temos tudo para diminuir seu trabalho ao máximo!</p>
+                  <p className={styles.homeText}>
+                    Permita que o próprio aluno agende suas aulas de forma rápida e simples, direto pelo celular.
+                  </p>
+                </div>
+                <Button>Saiba Mais</Button>
+              </>
+            </Card>
+
+            <Card>
+              <>
+                <h3>Gestão Completa</h3>
+                <h1>Controle da Autoescola</h1>
+                <div className={styles.containerVertical}>
+                  <p className={styles.homeText}>
+                    Tenha total controle sobre horários, instrutores, veículos, presença e andamento de cada aluno.
+                  </p>
                 </div>
                 <Button>Saiba Mais</Button>
               </>
@@ -36,20 +51,11 @@ export default function HomePage() {
             <Card>
               <>
                 <h3>Automação</h3>
-                <h1>Integração</h1>
+                <h1>Comunicação e Alertas</h1>
                 <div className={styles.containerVertical}>
-                  <p className={styles.homeText}>Temos tudo para diminuir seu trabalho ao máximo!</p>
-                </div>
-                <Button>Saiba Mais</Button>
-              </>
-            </Card>
-
-            <Card>
-              <>
-                <h3>Automação</h3>
-                <h1>Integração</h1>
-                <div className={styles.containerVertical}>
-                  <p className={styles.homeText}>Temos tudo para diminuir seu trabalho ao máximo!</p>
+                  <p className={styles.homeText}>
+                    Envio automático de lembretes de aula, mensagens de falta, vencimentos e mais. Você foca no essencial!
+                  </p>
                 </div>
                 <Button>Saiba Mais</Button>
               </>
